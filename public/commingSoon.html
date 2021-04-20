@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>BARON DIVE</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="BaronDive" content="BaronDive" />
+    <meta name="description" content="바론다이브, barondive, 보홀, 필리핀 다이빙, 보홀 다이빙, 스쿠버다이빙, 펀다이빙, scubadiving, 스킨스쿠버" />
+    <meta property="og:title" content="보홀 바론다이브(Baron Dive)" />
+    <meta property="og:description" content="바론다이브, barondive, 보홀, 필리핀 다이빙, 보홀 다이빙, 스쿠버다이빙, 펀다이빙, scubadiving, 스킨스쿠버" />
+    <meta property="og:url" content="http://www.barondive.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800%7CRanga:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/cs.css" />
+    <script src="/js/jquery-1.11.3.min.js"></script>
+    <script src="/js/typed.js"></script>
+	<script type="text/javascript" src="/js/simplyCountdown.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#typed").typed({
+                strings: [" Coming Soon", " Stay Tuned", " Almost There", " Let's keep the<br />Honor of Dive!"],
+                typeSpeed: 50,
+                backDelay: 2000,
+                loop: true,
+                cursorChar: "|",
+                contentType: 'html',
+                loopCount: false
+            });
+
+            simplyCountdown('#scd', {
+                year: 2020,
+                month: 2,
+                day: 1,
+                inline: true,
+                words: {
+                    days: 'days',
+                    hours: 'h',
+                    minutes: 'm',
+                    seconds: 's',
+                    pluralLetter: ''
+                }
+            });
+        });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+        <div class="wrap_left">
+            <div class="left_cont">
+                <ul class="txt_wrap">
+                    <li><img src="/logo_300.png" class="logo" /></li>
+                    <li>
+                        <span id="typed">Coming Soon</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="sns_wrap">
+                <ul class="sns_links">
+                    <li><a class="fadeIn fast-child-1"  href="#" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a class="fadeIn fast-child-2"  href="https://www.instagram.com/baron_dive" target="_blank" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li>CopyRight © 2019 BARON DIVE All Rights Reserved.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrap_right">
+            <div class="bg"></div>
+            <div class="bg_img"></div>
+            <div class="cont_wrap">
+                <p class="fir">Let's keep the Honor of Dive!</p>
+                <p class="sec">BARON DIVE Launch In</p>
+                <p class="thi" id="scd">114 days, 16 h, 9 m, 47 s.</p>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
